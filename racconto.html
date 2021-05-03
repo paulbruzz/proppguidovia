@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>CAMMINATA NELLA NATURA</title>
+  <link rel="stylesheet" href="impaginazione.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="foglie.png">
+  <script src="toggleshow.js"></script>
+</head>
+<body>
+  <div id="testo">
+    <h1>CAMMINATA NELLA NATURA</h1>
+    <table>
+      <tr>
+        <td colspan="2" id="primariga">
+          PREMESSA
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Questo testo è stato scritto per il corso di <em>Strutture narrative
+          e nuovi media</em>. La componente grafica riveste un ruolo centrale
+          nella sua fruizione poiché, per mettere in risalto il modo in cui
+          è strutturato, sono stati adottati degli accorgimenti descritti nella
+          seguente tabella:
+        </td>
+      </tr>
+      <tr>
+        <td class="times">
+            Testo in Times New Roman
+        </td>
+        <td>
+            Frase strutturata in maniera chiastica
+        </td>
+      </tr>
+      <tr>
+        <td class="monospace">
+            Testo in monospace
+        </td>
+        <td>
+            Elementi che “ritornano” nel testo (struttura ad anello)
+        </td>
+      </tr>
+      <tr>
+        <td class="calligrafico">
+            Testo calligrafico (font: IndieFlower)
+        </td>
+        <td>
+            Pensieri integrati nel testo
+        </td>
+      </tr>
+    </table>
+    <div class="suono">
+      Per una migliore fruizione del testo, è consigliabile ascoltare in sottofondo
+      una registrazione ambientale come quella proposta qui sotto (programmata per
+      andare in loop).<br />
+      <audio controls loop>
+        <source src="bosco.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <p>
+      <span class="times">Stare in mezzo alla natura mi è sempre piaciuto, così come mi è sempre
+      piaciuto camminare.</span>
+      <span class="monospace">Non c’è dunque da stupirsi che, quando ho ricevuto
+      l’invito ad andare a fare un’escursione sull’ex-guidovia che collegava
+      San Quirico al santuario della Madonna della Guardia, io non ci abbia
+      pensato due volte ad accettare e a prendere la macchina per raggiungere
+      gli altri dall’altra parte della città.</span>
+    </p>
+    <p>
+      Intrapreso il cammino, tutto ciò che mi circondava non faceva altro che
+      confermare le sensazioni positive <span class="times">che avevo già provato infinite volte – e che
+      infinite volte spero di provare ancora</span>, <span class="monospace">Covid permettendo.</span>
+      Mi piace guardarmi intorno e ascoltare: quando cammino in città copro gli sgradevoli suoni del
+      traffico con gli auricolari, cercando di compensare l’assenza della natura con
+      un’altra mia grande passione, quella per la musica. Qui però non ne ho bisogno,
+      perché i rami scossi lievemente dal vento, gli uccellini che cantano e l’acqua
+      che scorre nei ruscelli compongono spontaneamente la musica migliore che possa
+      chiedere di ascoltare.
+    </p>
+    <p>
+      <span class="monospace">
+      Oggi concedo al mio cellulare un po’ di “ferie”: oltre alla musica, vorrei
+      staccare un po’ dai social network e dalle app di messaggistica,</span>
+      cercando di godermi quello che ho davanti e di stare con gli altri.<br/>
+      C’è solo un’app a cui non posso rinunciare, e che oggi farà gli straordinari:
+      la fotocamera.
+    </p>
+    <p class="calligrafico">
+      Un mio pensiero fisso, infatti, è che se fossi stato io il protagonista del
+      Faust di Goethe, avrei perso in partenza la scommessa col diavolo:
+      troppo spesso sento forte in me la tentazione di dire "Fermati! Sei bello!"
+      all’attimo che fugge. Forse è una sorta di deformazione professionale da
+      germanista, ma in ogni caso scattare una fotografia serve quantomeno ad
+      esorcizzarla, questa tentazione.
+      Con la fotografia ho un rapporto comunque razionale: so
+      perfettamente che scattare una foto non riuscirà a imprigionare l’attimo ma me
+      ne lascerà solo un’immagine. Inoltre, cerco di fare in modo che la mia
+      “ossessione” non rovini la passeggiata: voglio viverla nel vero senso della
+      parola, guardando la natura attraverso i miei occhi con spontanea meraviglia invece che
+      vederla scivolare via nello schermo del cellulare, distratto dallo sforzo di
+      azzeccare l’inquadratura.
+    </p>
+    <div class="cornice">
+      <img id="guidovia" src="guidovia.png" alt="foto della guidovia"/>
+    </div>
+    <p id="difianco">
+      "<em>PAOLOOOO!</em>". I miei amici mi chiamano ad alta voce, distogliendomi
+      dalle mie riflessioni. "<em>Aspettiamo, è rimasto indietro</em>", li sento
+      dire. Sono un po' imbarazzato: ero già dietro di loro e, preso com’ero dalla
+      bellezza di questo scorcio, mi sono fermato a fare una foto senza nemmeno
+      avvisarli, perdendomi poi nel gigantesco labirinto dei miei pensieri
+      mentre controllavo il risultato dello scatto.
+      <div>
+        <button id="nota" onclick="mostranota1()">NOTA</button>
+        <span id="nota1" class="nota" style="display: none">
+          È chiaro che la divagazione sul <em>Faust</em> e sul mio rapporto con la
+          fotografia, più che una parte del testo slegata dalla narrazione in cui
+          descrivo il mio pensiero, è proprio ciò a cui penso mentre rimango indietro
+          rispetto ai miei amici, e quindi parte integrante della narrazione.
+        </span>
+      </div>      
+    </p>
+    <p>
+      Così li raggiungo, lasciando indietro quel posto la cui bellezza mi aveva
+      totalmente rapito.<span class="times"> Trovo altri punti degni di una foto più avanti nel percorso –
+      così come, più indietro, altri ce n’erano già stati.</span>  Rientrato a casa
+      dall’escursione, però, riguardando le foto in successione, mi accorgo che quella
+      scattata in quel punto lì, dove ho fatto la figura dell’allocco, è di gran lunga
+      la più bella. Non che le altre siano brutte, semplicemente mi piace molto di
+      più, per ragioni che non so spiegare, ma che le altre persone a cui mostro le
+      immagini (i miei genitori, mia nonna, mia sorella) sembrano condividere. Questo,
+      a sua volta, mette in moto il mio cervello e mi fa riflettere mentre mi sdraio
+      sul divano per riposarmi un po’ – stavolta sì – <span class="monospace">con la musica negli auricolari
+      mentre giro sui social network e chatto con gli amici: con l’escursione, del
+      resto, sono finite anche le “ferie” che avevo concesso al mio cellulare.</span>
+    </p>
+    <p>
+      Passano i mesi, ma continuo a riguardare quella foto e a rifletterci sopra,
+      aspettando sempre –<span class="monospace"> Covid permettendo - di tornare con gli amici
+      sull’ex-guidovia, accettando il loro invito senza pensarci due volte e
+      raggiungendoli in macchina dall’altra parte della città per godermi insieme a
+      loro una camminata in mezzo alla natura.</span>
+    </p>
+  </div>
+  <!-- Container for the image gallery -->
+  <div class="container">
+    <div class="caption-container">
+        ALTRE IMMAGINI
+    </div>
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="foto1.jpg" alt="foto1" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="foto2.jpg" alt="foto2" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="foto3.jpg" alt="foto3" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="foto4.jpg" alt="foto4" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="foto5.jpg" alt="foto5" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <video style="width:100%" autoplay muted loop>
+        <source src="guardia.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="foto1.jpg" style="width:100%" onclick="currentSlide(1)" alt="foto1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="foto2.jpg" style="width:100%" onclick="currentSlide(2)" alt="foto2">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="foto3.jpg" style="width:100%" onclick="currentSlide(3)" alt="foto3">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="foto4.jpg" style="width:100%" onclick="currentSlide(4)" alt="foto4">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="foto5.jpg" style="width:100%" onclick="currentSlide(5)" alt="foto5">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="foto6.jpg" style="width:100%" onclick="currentSlide(6)" alt="foto6">
+      </div>
+    </div>
+  </div>
+  <footer>
+    Made by Paul Bruzz in 2021
+  </footer>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+</script>
+</body>
+</html>

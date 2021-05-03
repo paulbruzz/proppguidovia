@@ -1,0 +1,212 @@
+@font-face{
+  font-family: 'Archivo';
+  src: url('Archivo-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'handwriting';
+  src: url('IndieFlower-Regular.ttf');
+}
+
+*{
+  font-family: 'Archivo', Sans-Serif;
+  font-size: 110%;
+  text-align: justify;
+  line-height: 150%;
+}
+
+body{
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #98FB98;
+}
+
+h1{
+  text-align: center;
+  font-size: 150%;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding:2%;
+  background-color: #ff7373;
+}
+
+#guidovia{
+  border: 3px solid green;
+  border-radius: 5px;
+  width: 300px;
+  background-color: green;
+}
+
+.cornice{
+  padding-right: 2%;
+  overflow: hidden;
+  float: left;
+}
+
+footer{
+  align-items: center;
+  background-color: black;
+  clear: both;
+  color: white;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  margin-top: -30px;
+  padding: 1%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button{
+  border-radius: 10px;
+  background-color: #c8a2c8;
+  text-align: center;
+}
+
+.nota{
+  border: 1px solid purple;
+  background-color: #c8a2c8;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 2%;
+  overflow:hidden;
+  font-size: 100%;
+}
+
+table{
+  border: 2px solid black;
+  width: 100%;
+  background-image: radial-gradient(white 1%, #c8a2c8 99%);
+  border-radius: 5px;
+}
+
+td{
+  padding: 1%;
+  font-size: 75%;
+}
+
+#primariga{
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.times{
+  font-family: "Times New Roman", Times, serif;
+}
+
+.monospace{
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.calligrafico{
+  font-family: 'handwriting';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.suono{
+  margin:auto;
+  margin-top: 10px;
+  text-align:center;
+  border: 4px solid blue;
+  background-color: #FFFFE0;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+audio{
+  margin-top: 1%;
+}
+
+#nota{
+  font-size: 75%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width:50%;
+  clear: both;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
